@@ -20,12 +20,12 @@ public class KaraokeClient {
 		
 		// The first argument is a service URI. It matches the package name of the server.
 		// The second argument is a service name, which refers to the wsdl document from above-
-		QName qname = new QName("http://server.soap.jaxrs.example.idioti.se/", "KaraokeImplService");
+		QName qname = new QName("http://server.soap.jaxws.example.idioti.se/", "KaraokeImplService");
 
 		Service service = Service.create(url, qname);
 		Karaoke karaoke = service.getPort(Karaoke.class);
 
-		String response = karaoke.getSongAsString("Let it go");
+		String response = karaoke.getSongAsString("The ketchup song");
 		
 		System.out.println(response);
 
