@@ -1,7 +1,7 @@
 package se.idioti.example.jaxws.soap.client;
 
 import java.net.URL;
-import javax.xml.ws.Service;
+import jakarta.xml.ws.Service;
 
 import se.idioti.example.jaxws.soap.server.Karaoke;
 
